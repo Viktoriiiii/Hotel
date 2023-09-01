@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/hotelFragment">
+
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="ru.spb.viktorii.hotel.ui.HotelFragment"
+        android:label="fragment_hotel"
+        tools:layout="@layout/fragment_hotel" >
+        <action
+            android:id="@+id/action_hotelFragment_to_choiceOfHotelRoomFragment"
+            app:destination="@id/choiceOfHotelRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choiceOfHotelRoomFragment"
+        android:name="ru.spb.viktorii.hotel.ui.ChoiceOfHotelRoomFragment"
+        android:label="fragment_choice_of_hotel_room"
+        tools:layout="@layout/fragment_choice_of_hotel_room" >
+        <action
+            android:id="@+id/action_choiceOfHotelRoomFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+        <action
+            android:id="@+id/action_choiceOfHotelRoomFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="ru.spb.viktorii.hotel.ui.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" >
+        <action
+            android:id="@+id/action_bookingFragment_to_orderPaidFragment"
+            app:destination="@id/orderPaidFragment" />
+        <action
+            android:id="@+id/action_bookingFragment_to_choiceOfHotelRoomFragment"
+            app:destination="@id/choiceOfHotelRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderPaidFragment"
+        android:name="ru.spb.viktorii.hotel.ui.OrderPaidFragment"
+        android:label="fragment_order_paid"
+        tools:layout="@layout/fragment_order_paid" >
+        <action
+            android:id="@+id/action_orderPaidFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+        <action
+            android:id="@+id/action_orderPaidFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+    </fragment>
+</navigation>
