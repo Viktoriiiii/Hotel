@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.OrderPaidFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:background="@color/white"
+    tools:context=".ui.HotelFragment">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            app:cardCornerRadius="47dp"
+            android:backgroundTint="@color/main_background"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/img_party_popper"
+                android:layout_gravity="center" />
+        </androidx.cardview.widget.CardView>
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/tv_order_in_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ваш заказ принят в работу"
+            android:padding="6dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_confirmation_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Подтверждение заказа №104893 может занять некоторое время (от 1 часа до суток). Как только мы получим ответ от туроператора, вам на почту придет уведомление."
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/hint"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mb_choose_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/button_background"
+                android:padding="16dp"
+                android:text="@string/_super"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="16dp"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="16dp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

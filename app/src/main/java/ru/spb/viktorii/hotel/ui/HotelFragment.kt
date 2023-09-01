@@ -26,6 +26,13 @@ class HotelFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.mbChooseRoom.setOnClickListener {
+            MAIN.navController.navigate(R.id.action_hotelFragment_to_choiceOfHotelRoomFragment)
+        }
+    }
+
     override fun onResume() {
         super.onResume()
         MAIN.setItemsInToolbar("Отель", false)

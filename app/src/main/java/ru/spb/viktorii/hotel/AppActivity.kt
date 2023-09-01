@@ -9,7 +9,7 @@ import ru.spb.viktorii.hotel.databinding.ActivityAppBinding
 
 class AppActivity : AppCompatActivity() {
 
-    private lateinit var navController: NavController
+    lateinit var navController: NavController
     private lateinit var binding: ActivityAppBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +19,9 @@ class AppActivity : AppCompatActivity() {
 
         MAIN = this
         navController = Navigation.findNavController(this, R.id.fragment_container)
+        binding.ivBack.setOnClickListener {
+            onSupportNavigateUp()
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
