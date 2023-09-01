@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import ru.spb.viktorii.hotel.R
 import ru.spb.viktorii.hotel.databinding.FragmentOrderPaidBinding
 
 class OrderPaidFragment : Fragment() {
@@ -16,7 +15,7 @@ class OrderPaidFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentOrderPaidBinding.inflate(inflater, container, false)
         return binding.root
     }
