@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/white"
-        android:elevation="4dp"
+        android:elevation="0dp"
         android:textAlignment="center"
         app:titleTextColor="@color/black"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar" >

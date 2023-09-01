@@ -9,7 +9,7 @@ import ru.spb.viktorii.hotel.databinding.ActivityAppBinding
 
 class AppActivity : AppCompatActivity() {
 
-    lateinit var navController: NavController
+    private lateinit var navController: NavController
     private lateinit var binding: ActivityAppBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
