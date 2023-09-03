@@ -10,6 +10,7 @@
     <color name="transparent">#00FFFFFF</color>
     <color name="main_background">#F6F6F9</color>
     <color name="button_background">#0D72FF</color>
+    <color name="button_background_lite">#1A0D72FF</color>
     <color name="gray">#ADADAD</color>
     <color name="about_hotel_text">#2C3035</color>
     <color name="gray_for_peculiarities">#FBFBFC</color>
