@@ -35,14 +35,14 @@ class HotelFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        MAIN.setItemsInToolbar("Отель", false)
+        MAIN.setItemsInToolbar(getString(R.string.hotel), false)
 
         val resources = intArrayOf(
             R.drawable.club_prive_by_belek_club_house,
-            R.drawable.img,
-            R.drawable.img,
-            R.drawable.img,
-            R.drawable.img
+            R.drawable.img_hotel,
+            R.drawable.img_hotel,
+            R.drawable.img_hotel,
+            R.drawable.img_hotel
         )
 
         val mCustomPagerAdapter = PagerAdapterForImages(MAIN, resources)

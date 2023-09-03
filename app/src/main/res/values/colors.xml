@@ -11,6 +11,8 @@
     <color name="main_background">#F6F6F9</color>
     <color name="button_background">#0D72FF</color>
     <color name="gray">#ADADAD</color>
+    <color name="about_hotel_text">#2C3035</color>
+    <color name="gray_for_peculiarities">#FBFBFC</color>
     <color name="hint">#828796</color>
     <color name="orange">#FFA800</color>
     <color name="orange_lite">#33FFC700</color>
