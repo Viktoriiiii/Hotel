@@ -46,9 +46,9 @@ class HotelFragment : Fragment() {
         )
 
         val mCustomPagerAdapter = PagerAdapterForImages(MAIN, resources)
-        binding.viewPager.adapter = mCustomPagerAdapter
-        TabLayoutMediator(binding.tabDots, binding.viewPager) { _, _ -> }.attach()
-        binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+        binding.cvPhoto.viewPager.adapter = mCustomPagerAdapter
+        TabLayoutMediator(binding.cvPhoto.tabDots, binding.cvPhoto.viewPager) { _, _ -> }.attach()
+        binding.cvPhoto.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
         })
     }
 
