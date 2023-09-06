@@ -28,8 +28,7 @@
                     android:id="@+id/cv_photo"
                     layout="@layout/view_image"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_grade"
@@ -45,7 +44,6 @@
                         android:id="@+id/tv_grade"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="5 Превосходно"
                         android:padding="6dp"
                         android:textSize="16sp"
                         android:textColor="@color/orange"
@@ -56,7 +54,6 @@
                     android:id="@+id/tv_hotel_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Steigenberger Makadi"
                     android:paddingVertical="6dp"
                     android:textSize="22sp"
                     android:textStyle="bold"
@@ -70,7 +67,6 @@
                     android:layout_height="wrap_content"
                     android:textAllCaps="false"
                     android:textSize="14sp"
-                    android:text="Madinat Makadi, Safaga Road, Makadi Bay, Египет"
                     android:paddingVertical="6dp"
                     android:textAlignment="textStart"
                     android:textColor="@color/button_background"
@@ -84,7 +80,6 @@
                     android:layout_height="wrap_content"
                     android:textAllCaps="false"
                     android:textSize="30sp"
-                    android:text="от 134 673 ₽"
                     android:paddingVertical="6dp"
                     android:textAlignment="textStart"
                     android:textColor="@color/black"
@@ -92,15 +87,13 @@
                     android:textStyle="bold"
                     app:layout_constraintTop_toBottomOf="@+id/tv_hotel_address"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                     />
+                    app:layout_constraintBottom_toBottomOf="parent" />
                 <TextView
                     android:id="@+id/tv_hotel_price_for_it"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAllCaps="false"
                     android:textSize="16sp"
-                    android:text="за тур с перелетом"
                     android:textAlignment="textStart"
                     android:textColor="@color/hint"
                     android:background="@color/white"
@@ -144,39 +137,16 @@
                     app:flexWrap="wrap"
                     app:alignItems="stretch"
                     app:alignContent="stretch"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_hotel_about"
-                    >
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cv_peculiarities"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/gray_for_peculiarities"
-                        app:cardCornerRadius="6dp"
-                        app:cardElevation="0dp"
-                        android:layout_marginVertical="10dp">
-                    <TextView
-                        android:id="@+id/tv_peculiarities"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3-я линия"
-                        android:padding="6dp"
-                        android:textSize="16sp"
-                        android:textColor="@color/hint"
-                        app:layout_alignSelf="center"
-                        />
-                    </androidx.cardview.widget.CardView>
-                </com.google.android.flexbox.FlexboxLayout>
+                    app:layout_constraintTop_toBottomOf="@+id/tv_hotel_about" />
 
                 <TextView
                     android:id="@+id/tv_hotel_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Отель VIP-класса с собственными гольф полями. Высокий уровнь сервиса. Рекомендуем для респектабельного отдыха. Отель принимает гостей от 18 лет!"
                     android:paddingVertical="6dp"
                     android:textSize="16sp"
                     android:textColor="@color/black"
-                    app:layout_constraintTop_toBottomOf="@+id/fbl_peculiarities"
-                     />
+                    app:layout_constraintTop_toBottomOf="@+id/fbl_peculiarities" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -184,8 +154,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/tv_hotel_description"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="0dp"
-                    android:layout_marginVertical="16dp"
-                    >
+                    android:layout_marginVertical="16dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -196,8 +165,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:background="@color/gray_for_peculiarities"
-                        >
+                        android:background="@color/gray_for_peculiarities">
                         <ImageView
                             android:id="@+id/iv_facilities"
                             android:layout_width="35dp"
@@ -208,7 +176,7 @@
                             android:src="@drawable/img_facilities"
                             android:layout_gravity="start|center"
                             android:padding="6dp"
-                            />
+                            android:contentDescription="@string/image" />
                         <TextView
                             android:id="@+id/tv_title_facilities"
                             android:layout_width="wrap_content"
@@ -219,8 +187,7 @@
                             android:text="@string/facilities"
                             android:textSize="16sp"
                             android:textColor="@color/black"
-                            android:gravity="center"
-                            />
+                            android:gravity="center" />
                         <TextView
                             android:id="@+id/tv_subtitle_facilities"
                             android:layout_width="wrap_content"
@@ -231,8 +198,7 @@
                             android:paddingHorizontal="6dp"
                             android:textSize="14sp"
                             android:textColor="@color/hint"
-                            android:gravity="center"
-                            />
+                            android:gravity="center" />
                         <ImageView
                             android:id="@+id/iv_facilities_back"
                             android:layout_width="24dp"
@@ -242,22 +208,20 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             android:src="@drawable/ic_baseline_arrow_forward_ios_24"
                             android:layout_gravity="end|center"
-                            />
+                            android:contentDescription="@string/image" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <View
                         android:layout_width="270dp"
                         android:layout_height="0.5dp"
                         android:background="@color/gray"
-                        android:layout_gravity="center"
-                        />
+                        android:layout_gravity="center" />
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/b_included"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:background="@color/gray_for_peculiarities"
-                        >
+                        android:background="@color/gray_for_peculiarities">
                         <ImageView
                             android:id="@+id/iv_included"
                             android:layout_width="35dp"
@@ -268,7 +232,7 @@
                             android:src="@drawable/img_included"
                             android:layout_gravity="start|center"
                             android:padding="6dp"
-                            />
+                            android:contentDescription="@string/image" />
                         <TextView
                             android:id="@+id/tv_title_included"
                             android:layout_width="wrap_content"
@@ -279,8 +243,7 @@
                             android:text="@string/included"
                             android:textSize="16sp"
                             android:textColor="@color/black"
-                            android:gravity="center"
-                            />
+                            android:gravity="center" />
                         <TextView
                             android:id="@+id/tv_subtitle_included"
                             android:layout_width="wrap_content"
@@ -291,8 +254,7 @@
                             android:paddingHorizontal="6dp"
                             android:textSize="14sp"
                             android:textColor="@color/hint"
-                            android:gravity="center"
-                            />
+                            android:gravity="center" />
                         <ImageView
                             android:id="@+id/iv_included_back"
                             android:layout_width="24dp"
@@ -302,22 +264,20 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             android:src="@drawable/ic_baseline_arrow_forward_ios_24"
                             android:layout_gravity="end|center"
-                            />
+                            android:contentDescription="@string/image" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
                         <View
                             android:layout_width="270dp"
                             android:layout_height="0.5dp"
                             android:layout_gravity="center"
-                            android:background="@color/gray"
-                            />
+                            android:background="@color/gray" />
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:id="@+id/b_not_included"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:background="@color/gray_for_peculiarities"
-                            >
+                            android:background="@color/gray_for_peculiarities">
                             <ImageView
                                 android:id="@+id/iv_not_included"
                                 android:layout_width="35dp"
@@ -328,7 +288,7 @@
                                 android:src="@drawable/img_not_included"
                                 android:layout_gravity="start|center"
                                 android:padding="6dp"
-                                />
+                                android:contentDescription="@string/image" />
                             <TextView
                                 android:id="@+id/tv_title_not_included"
                                 android:layout_width="wrap_content"
@@ -339,8 +299,7 @@
                                 android:text="@string/not_included"
                                 android:textSize="16sp"
                                 android:textColor="@color/black"
-                                android:gravity="center"
-                                />
+                                android:gravity="center" />
                             <TextView
                                 android:id="@+id/tv_subtitle_not_included"
                                 android:layout_width="wrap_content"
@@ -351,8 +310,7 @@
                                 android:paddingHorizontal="6dp"
                                 android:textSize="14sp"
                                 android:textColor="@color/hint"
-                                android:gravity="center"
-                                />
+                                android:gravity="center" />
                             <ImageView
                                 android:id="@+id/iv_not_included_back"
                                 android:layout_width="24dp"
@@ -362,7 +320,7 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 android:src="@drawable/ic_baseline_arrow_forward_ios_24"
                                 android:layout_gravity="end|center"
-                                />
+                                android:contentDescription="@string/image" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

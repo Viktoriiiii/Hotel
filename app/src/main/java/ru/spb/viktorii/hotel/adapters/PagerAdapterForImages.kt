@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import ru.spb.viktorii.hotel.R
 
-class PagerAdapterForImages(private val context: Context, private val resources: IntArray):
+class PagerAdapterForImages(private val context: Context, private val resources: List<String>):
     RecyclerView.Adapter<PagerAdapterForImages.PagerViewHolder>() {
 
     class PagerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -20,7 +21,6 @@ class PagerAdapterForImages(private val context: Context, private val resources:
             imgView = itemView.findViewById(R.id.imageView) as ImageView
             container = itemView.findViewById(R.id.container) as LinearLayout
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {
@@ -28,7 +28,9 @@ class PagerAdapterForImages(private val context: Context, private val resources:
     }
 
     override fun onBindViewHolder(holder: PagerViewHolder, position: Int) {
-        holder.imgView.setImageResource(resources[position])
+        Glide.with(context)
+            .load(resources[position])
+            .into(holder.imgView)
     }
 
     override fun getItemCount(): Int {
