@@ -30,6 +30,7 @@ class ChoiceRoomFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        MAIN.setItemsInToolbar(MAIN.nameHotel, true)
         showInfoAboutRooms()
     }
 
@@ -42,12 +43,6 @@ class ChoiceRoomFragment : Fragment() {
                 }
             }
         }
-
-        MAIN.setItemsInToolbar(MAIN.nameHotel, true)
-    }
-
-    override fun onResume() {
-        super.onResume()
     }
 
     override fun onDestroy() {

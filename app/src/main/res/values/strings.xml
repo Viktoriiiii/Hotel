@@ -11,4 +11,8 @@
     <string name="not_included">What is not included</string>
     <string name="image">image</string>
     <string name="more_about_room">More about room</string>
+    <string name="order_paid">Order paid</string>
+    <string name="booking">Booking</string>
+    <string name="order_has_been_processed">Your order has been processed</string>
+    <string name="order_paid_description">Order №%1$s confirmation may take some time (from 1 hour to 24 hours). As soon as we receive a response from the tour operator, you will receive a notification by mail.</string>
 </resources>

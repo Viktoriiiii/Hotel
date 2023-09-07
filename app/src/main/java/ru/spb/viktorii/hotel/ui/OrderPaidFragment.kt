@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import ru.spb.viktorii.hotel.MAIN
+import ru.spb.viktorii.hotel.R
 import ru.spb.viktorii.hotel.databinding.FragmentOrderPaidBinding
 
 class OrderPaidFragment : Fragment() {
@@ -23,11 +24,13 @@ class OrderPaidFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-    }
+        MAIN.setItemsInToolbar(getString(R.string.order_paid), true)
+        binding.mbSuper.setOnClickListener {
+            MAIN.navController.navigate(R.id.action_orderPaidFragment_to_hotelFragment)
+        }
 
-    override fun onResume() {
-        super.onResume()
-        MAIN.setItemsInToolbar("Заказ оплачен", true)
+        val randomNumber = (0..1000000).random().toString()
+        binding.tvConfirmationOrder.text = getString(R.string.order_paid_description, randomNumber)
     }
 
     override fun onDestroy() {

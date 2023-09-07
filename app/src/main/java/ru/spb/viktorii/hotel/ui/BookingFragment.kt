@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import ru.spb.viktorii.hotel.MAIN
+import ru.spb.viktorii.hotel.R
 import ru.spb.viktorii.hotel.databinding.FragmentBookingBinding
 class BookingFragment : Fragment() {
 
@@ -22,11 +23,14 @@ class BookingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.mbPay.setOnClickListener {
+            MAIN.navController.navigate(R.id.action_bookingFragment_to_orderPaidFragment)
+        }
     }
 
     override fun onResume() {
         super.onResume()
-        MAIN.setItemsInToolbar("Бронирование", true)
+        MAIN.setItemsInToolbar(getString(R.string.booking), true)
     }
 
     override fun onDestroyView() {

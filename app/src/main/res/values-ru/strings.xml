@@ -12,4 +12,8 @@
     <string name="not_included">Что не включено</string>
     <string name="image">Изображение</string>
     <string name="more_about_room">Подробнее о номере</string>
+    <string name="order_paid">Заказ оплачен</string>
+    <string name="booking">Бронирование</string>
+    <string name="order_has_been_processed">Ваш заказ принят в работу</string>
+    <string name="order_paid_description">Подтверждение заказа №%1$s может занять некоторое время (от 1 часа до суток). Как только мы получим ответ от туроператора, вам на почту придет уведомление.</string>
 </resources>
