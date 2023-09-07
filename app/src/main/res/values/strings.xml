@@ -15,4 +15,10 @@
     <string name="booking">Booking</string>
     <string name="order_has_been_processed">Your order has been processed</string>
     <string name="order_paid_description">Order №%1$s confirmation may take some time (from 1 hour to 24 hours). As soon as we receive a response from the tour operator, you will receive a notification by mail.</string>
+    <string name="room">Room</string>
+    <string name="nights">Nights</string>
+    <string name="dates">Dates</string>
+    <string name="country_city">Country, city</string>
+    <string name="departure_from">Departure from</string>
+    <string name="nutrition">Nutrition</string>
 </resources>

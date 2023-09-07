@@ -36,11 +36,9 @@ class ChoiceRoomFragment : Fragment() {
 
     private fun showInfoAboutRooms() {
         lifecycleScope.launch {
-            binding.apply {
-                vmRoom.getRooms()
-                vmRoom.rooms.observe(this@ChoiceRoomFragment){
-                    binding.rvHotelRooms.adapter = RoomAdapter(it.rooms)
-                }
+            vmRoom.getRooms()
+            vmRoom.rooms.observe(this@ChoiceRoomFragment){
+                binding.rvHotelRooms.adapter = RoomAdapter(it.rooms)
             }
         }
     }

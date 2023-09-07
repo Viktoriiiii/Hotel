@@ -46,28 +46,26 @@ class HotelFragment : Fragment() {
     @SuppressLint("InflateParams")
     fun showInfoAboutHotel() {
         lifecycleScope.launch {
-            binding.apply {
-                vmHotel.getHotel()
-                vmHotel.hotel.observe(this@HotelFragment){
-                    binding.tvHotelName.text = it.name
-                    binding.tvHotelAddress.text = it.address
-                    binding.tvHotelMinimalPrice.text = String.format("от ${NumberFormat.getNumberInstance(Locale("ru")).format(it.minimalPrice)} ₽")
-                    binding.tvHotelPriceForIt.text = it.priceForIt
-                    binding.tvGrade.text = String.format("${it.rating} ${it.ratingName}")
-                    binding.tvHotelDescription.text = it.aboutTheHotel.description
-                    binding.cvPhoto.viewPager.adapter = PagerAdapterForImages(MAIN, it.imageUrls)
-                    TabLayoutMediator(binding.cvPhoto.tabDots, binding.cvPhoto.viewPager) { _, _ -> }.attach()
+            vmHotel.getHotel()
+            vmHotel.hotel.observe(this@HotelFragment){
+                binding.tvHotelName.text = it.name
+                binding.tvHotelAddress.text = it.address
+                binding.tvHotelMinimalPrice.text = String.format("от ${NumberFormat.getNumberInstance(Locale("ru")).format(it.minimalPrice)} ₽")
+                binding.tvHotelPriceForIt.text = it.priceForIt
+                binding.tvGrade.text = String.format("${it.rating} ${it.ratingName}")
+                binding.tvHotelDescription.text = it.aboutTheHotel.description
+                binding.cvPhoto.viewPager.adapter = PagerAdapterForImages(MAIN, it.imageUrls)
+                TabLayoutMediator(binding.cvPhoto.tabDots, binding.cvPhoto.viewPager) { _, _ -> }.attach()
 
-                    val peculiarities = it.aboutTheHotel.peculiarities
-                    binding.fblPeculiarities.removeAllViews()
-                    for (i in peculiarities){
-                        val cardView = layoutInflater.inflate(R.layout.item_peculiarities, null) as CardView
-                        val textView = cardView.findViewById<TextView>(R.id.tv_peculiarities)
-                        textView.text = i
-                        binding.fblPeculiarities.addView(cardView)
-                    }
-                    MAIN.nameHotel = it.name
+                val peculiarities = it.aboutTheHotel.peculiarities
+                binding.fblPeculiarities.removeAllViews()
+                for (i in peculiarities){
+                    val cardView = layoutInflater.inflate(R.layout.item_peculiarities, null) as CardView
+                    val textView = cardView.findViewById<TextView>(R.id.tv_peculiarities)
+                    textView.text = i
+                    binding.fblPeculiarities.addView(cardView)
                 }
+                MAIN.nameHotel = it.name
             }
         }
     }

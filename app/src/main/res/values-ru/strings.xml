@@ -16,4 +16,10 @@
     <string name="booking">Бронирование</string>
     <string name="order_has_been_processed">Ваш заказ принят в работу</string>
     <string name="order_paid_description">Подтверждение заказа №%1$s может занять некоторое время (от 1 часа до суток). Как только мы получим ответ от туроператора, вам на почту придет уведомление.</string>
+    <string name="room">Номер</string>
+    <string name="nights">Кол-во ночей</string>
+    <string name="dates">Даты</string>
+    <string name="country_city">Страна, город</string>
+    <string name="departure_from">Вылет из</string>
+    <string name="nutrition">Питание</string>
 </resources>
