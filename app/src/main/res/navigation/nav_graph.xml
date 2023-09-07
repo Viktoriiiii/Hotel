@@ -16,9 +16,9 @@
     </fragment>
     <fragment
         android:id="@+id/choiceOfHotelRoomFragment"
-        android:name="ru.spb.viktorii.hotel.ui.ChoiceOfHotelRoomFragment"
+        android:name="ru.spb.viktorii.hotel.ui.ChoiceRoomFragment"
         android:label="fragment_choice_of_hotel_room"
-        tools:layout="@layout/fragment_choice_of_hotel_room" >
+        tools:layout="@layout/fragment_choice_room" >
         <action
             android:id="@+id/action_choiceOfHotelRoomFragment_to_hotelFragment"
             app:destination="@id/hotelFragment" />

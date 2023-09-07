@@ -11,6 +11,7 @@ class AppActivity : AppCompatActivity() {
 
     lateinit var navController: NavController
     private lateinit var binding: ActivityAppBinding
+    var nameHotel = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import ru.spb.viktorii.hotel.R
@@ -14,13 +13,7 @@ class PagerAdapterForImages(private val context: Context, private val resources:
     RecyclerView.Adapter<PagerAdapterForImages.PagerViewHolder>() {
 
     class PagerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var imgView: ImageView
-        var container: LinearLayout
-
-        init {
-            imgView = itemView.findViewById(R.id.imageView) as ImageView
-            container = itemView.findViewById(R.id.container) as LinearLayout
-        }
+        val imgView: ImageView = itemView.findViewById(R.id.imageView)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {

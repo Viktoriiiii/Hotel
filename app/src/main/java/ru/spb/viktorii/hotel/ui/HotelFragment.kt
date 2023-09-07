@@ -25,7 +25,7 @@ class HotelFragment : Fragment() {
     private var _binding: FragmentHotelBinding? = null
     private val binding get() = _binding!!
 
-    private val vm: HotelViewModel by inject()
+    private val vmHotel: HotelViewModel by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,8 +47,8 @@ class HotelFragment : Fragment() {
     fun showInfoAboutHotel() {
         lifecycleScope.launch {
             binding.apply {
-                vm.getHotel()
-                vm.hotel.observe(this@HotelFragment){
+                vmHotel.getHotel()
+                vmHotel.hotel.observe(this@HotelFragment){
                     binding.tvHotelName.text = it.name
                     binding.tvHotelAddress.text = it.address
                     binding.tvHotelMinimalPrice.text = String.format("от ${NumberFormat.getNumberInstance(Locale("ru")).format(it.minimalPrice)} ₽")
@@ -66,6 +66,7 @@ class HotelFragment : Fragment() {
                         textView.text = i
                         binding.fblPeculiarities.addView(cardView)
                     }
+                    MAIN.nameHotel = it.name
                 }
             }
         }
