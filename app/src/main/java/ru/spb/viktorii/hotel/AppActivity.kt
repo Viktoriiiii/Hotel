@@ -6,6 +6,7 @@ import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import ru.spb.viktorii.hotel.databinding.ActivityAppBinding
+import ru.spb.viktorii.hotel.utils.MAIN
 
 class AppActivity : AppCompatActivity() {
 

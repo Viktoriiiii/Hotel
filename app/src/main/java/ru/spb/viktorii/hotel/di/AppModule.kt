@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import ru.spb.viktorii.data.network.BookingService
 import ru.spb.viktorii.data.network.HotelService
 import ru.spb.viktorii.data.network.RoomService
-import ru.spb.viktorii.hotel.BASE_URL
+import ru.spb.viktorii.hotel.utils.BASE_URL
 import ru.spb.viktorii.hotel.viewmodels.BookingViewModel
 import ru.spb.viktorii.hotel.viewmodels.HotelViewModel
 import ru.spb.viktorii.hotel.viewmodels.RoomViewModel

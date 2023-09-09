@@ -12,12 +12,12 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
-import ru.spb.viktorii.hotel.MAIN
+import ru.spb.viktorii.hotel.utils.MAIN
 import ru.spb.viktorii.hotel.R
 import ru.spb.viktorii.hotel.adapters.PagerAdapterForImages
 import ru.spb.viktorii.hotel.databinding.FragmentHotelBinding
+import ru.spb.viktorii.hotel.utils.toStringWithRubles
 import ru.spb.viktorii.hotel.viewmodels.HotelViewModel
-import java.text.NumberFormat
 import java.util.*
 
 class HotelFragment : Fragment() {
@@ -50,7 +50,7 @@ class HotelFragment : Fragment() {
             vmHotel.hotel.observe(this@HotelFragment){
                 binding.tvHotelName.text = it.name
                 binding.tvHotelAddress.text = it.address
-                binding.tvHotelMinimalPrice.text = String.format("от ${NumberFormat.getNumberInstance(Locale("ru")).format(it.minimalPrice)} ₽")
+                binding.tvHotelMinimalPrice.text = it.minimalPrice.toStringWithRubles()
                 binding.tvHotelPriceForIt.text = it.priceForIt
                 binding.tvGrade.text = String.format("${it.rating} ${it.ratingName}")
                 binding.tvHotelDescription.text = it.aboutTheHotel.description

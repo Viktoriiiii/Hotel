@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
-import ru.spb.viktorii.hotel.MAIN
+import ru.spb.viktorii.hotel.utils.MAIN
 import ru.spb.viktorii.hotel.adapters.RoomAdapter
 import ru.spb.viktorii.hotel.databinding.FragmentChoiceRoomBinding
 import ru.spb.viktorii.hotel.viewmodels.RoomViewModel

@@ -1,4 +1,6 @@
-package ru.spb.viktorii.hotel
+package ru.spb.viktorii.hotel.utils
+
+import ru.spb.viktorii.hotel.AppActivity
 
 lateinit var MAIN: AppActivity
 

@@ -17,4 +17,6 @@
     <color name="hint">#828796</color>
     <color name="orange">#FFA800</color>
     <color name="orange_lite">#33FFC700</color>
+    <color name="black_lite">#14142B</color>
+    <color name="error">#26EB5757</color>
 </resources>

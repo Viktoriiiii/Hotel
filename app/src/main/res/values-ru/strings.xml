@@ -22,4 +22,20 @@
     <string name="country_city">Страна, город</string>
     <string name="departure_from">Вылет из</string>
     <string name="nutrition">Питание</string>
+    <string name="buyer_information">Информация о покупателе</string>
+    <string name="information">Эти данные никому не передаются. После оплаты мы вышлем чек на указанный вами номер и почту</string>
+    <string name="to_buy">К оплате</string>
+    <string name="service_charge">Сервисный сбор</string>
+    <string name="fuel_charge">Топливный сбор</string>
+    <string name="tour">Тур</string>
+    <string name="add_tourist">Добавить туриста</string>
+    <string name="to_pay">Оплатить  %1$s</string>
+    <string name="email">Почта</string>
+    <string name="phone">Номер телефона</string>
+    <string name="name">Имя</string>
+    <string name="passport_validity_period">Срок действия загранпаспорта</string>
+    <string name="international_passport_number">Номер загранпаспорта</string>
+    <string name="citizenship">Гражданство</string>
+    <string name="birthday">День рождения</string>
+    <string name="last_name">Фамилия</string>
 </resources>

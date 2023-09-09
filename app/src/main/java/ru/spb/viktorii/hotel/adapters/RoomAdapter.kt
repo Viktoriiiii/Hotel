@@ -13,9 +13,9 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import ru.spb.viktorii.domain.model.Rooms
-import ru.spb.viktorii.hotel.MAIN
+import ru.spb.viktorii.hotel.utils.MAIN
 import ru.spb.viktorii.hotel.R
-import java.text.NumberFormat
+import ru.spb.viktorii.hotel.utils.toStringWithRubles
 import java.util.*
 
 class RoomAdapter(private val rooms: List<Rooms.Room>) :
@@ -40,8 +40,7 @@ class RoomAdapter(private val rooms: List<Rooms.Room>) :
     @SuppressLint("InflateParams")
     override fun onBindViewHolder(holder: RoomViewHolder, position: Int) {
         holder.tvRoomName.text = rooms[position].name
-        holder.tvPrice.text = String.format("${NumberFormat.getNumberInstance(Locale("ru"))
-            .format(rooms[position].price)} ₽")
+        holder.tvPrice.text = rooms[position].price.toStringWithRubles()
         holder.tvPricePer.text = rooms[position].pricePer
 
         holder.fblPeculiarities

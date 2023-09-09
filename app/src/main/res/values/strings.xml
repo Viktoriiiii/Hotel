@@ -21,4 +21,22 @@
     <string name="country_city">Country, city</string>
     <string name="departure_from">Departure from</string>
     <string name="nutrition">Nutrition</string>
+    <string name="buyer_information">Buyer information</string>
+    <string name="information">This data is not shared with anyone. After payment we will send a check to the number and email you specified.</string>
+    <string name="to_buy">To buy</string>
+    <string name="service_charge">Service charge</string>
+    <string name="fuel_charge">Fuel charge</string>
+    <string name="tour">Tour</string>
+    <string name="add_tourist">Add tourist</string>
+    <string name="to_pay">To pay %1$s</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="phone_mask" translatable="false">+7 (***) ***-**-**</string>
+    <string name="email_hint" translatable="false">examplemail.000@mail.ru</string>
+    <string name="name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="birthday">Birthday</string>
+    <string name="citizenship">Citizenship</string>
+    <string name="international_passport_number">International passport number</string>
+    <string name="passport_validity_period">Passport validity period</string>
 </resources>
