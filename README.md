@@ -3,6 +3,8 @@
 ___
 
 ## Внешний вид ##
+По клику на изображение откроется ссылка на гугл диск с видеозаписью
+
 [![Watch the video](https://github.com/Viktoriiiii/Hotel/blob/master/screen_for_video.jpg)](https://drive.google.com/file/d/19gj25JrQ5ZouKAdMP1mEqpaMbxEFIF7b/view?usp=drive_link)
 
 ___
